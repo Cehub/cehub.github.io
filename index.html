@@ -15,6 +15,7 @@ description: "A Clean Blog Theme by Start Bootstrap"
           <h3 class="post-subtitle">
               {{ post.subtitle }}
           </h3>
+          
           {% endif %}
       </a>
     {% else %}
@@ -31,8 +32,14 @@ description: "A Clean Blog Theme by Start Bootstrap"
 
     {% endif %}
   
-
     <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    
+    <hr>
+    
+    <div class="post-exerpt">
+        {{ post.content }}
+    </div>
+    
 </div>
 <hr>
 {% endfor %}
