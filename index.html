@@ -8,7 +8,7 @@ description: "A Clean Blog Theme by Start Bootstrap"
   
     {% if post.link %}
       <!-- external link -->
-      <a href="{{ post.link | prepend: site.baseurl }}">
+      <a href="{{ post.link }}" target="_blank">
           <h2 class="post-title">            {{ post.title }}
           </h2>
           {% if post.subtitle %}
